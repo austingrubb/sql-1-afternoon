@@ -128,3 +128,91 @@ WHERE BillingState IN('CA','TX','AZ');
 SELECT AVG(Total) FROM Invoice;
 
 SELECT SUM(Total) FROM Invoice;
+
+
+
+
+
+-- integer PRIMARY KEY autoincrement
+-- drop table if exists Orders;
+
+
+-- CREATE TABLE Orders(
+-- Personid Integer,
+-- ProductName TEXT,
+-- ProductPrice DECIMAL,
+-- Quantity INTEGER
+-- );
+/* 
+INSERT INTO Orders
+(
+  Personid
+ ,ProductName
+ ,ProductPrice
+ ,Quantity
+);
+VALUES
+(1,'hat',39.77,42);
+(2,'hat',45.56,40),
+(3,'hat',350.95,7),
+(4,'hat',56.80,6),
+(5,'hat',34.70,1);
+ */
+/* insert into Orders
+(Personid,ProductName,ProductPrice,Quantity)
+VALUES
+(1,'hat',39.77,42),
+(2,'hat',39.77,42),
+(3,'hat',39.77,42),
+(4,'hat',39.77,42),
+(5,'hat',39.77,42); */
+
+/* select * from Orders; */
+
+/* select sum (ProductPrice) from Orders */
+/* where Personid = 1; */
+/* 
+insert into Artist(name) values('drugs');
+insert into Artist(name) values('drugs7');
+
+insert into Artist(name) values('drugs0'); */
+/* 
+select * from Artist
+order by Name 
+desc limit 10; */
+
+/* SELECT * FROM Artist
+WHERE Name LIKE 'Black%';
+ */
+/* SELECT * FROM Artist
+WHERE Name LIKE '%Black%'; */
+
+/* select FirstName, LastName from Employee
+where City = 'Calgary'; */
+
+/* select * from Employee
+where ReportsTo = 2; */
+
+/* select count(*) from Employee
+where city = 'Lethbridge'; */
+
+/* select count(*) from Invoice
+where BillingCountry = 'USA'; */
+
+/* select max(total) from invoice; */
+
+/* select min(total) from invoice; */
+
+/* select * from invoice 
+where total > 5; */
+
+/* 
+select count(*) from invoice
+where total < 5; */
+
+/* select count(*) from invoice
+where billingstate in ('CA','TX','AZ') */
+
+/* select avg(total) from invoice; */
+
+-- select sum(total) from invoice;
